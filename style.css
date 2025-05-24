@@ -111,7 +111,7 @@ header {
 }
 
 .center-text {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -159,17 +159,22 @@ header {
 /* ----------------------buy now------------------ */
 
 
-
+.product-scroll-section::-webkit-scrollbar{
+    display: none;
+}
 
 .product-scroll-section {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
   padding: 60px 20px;
-  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .product-scroll-wrapper {
   display: flex;
   gap: 20px;
-  /* overflow-x: auto; */
   padding-bottom: 20px;
 }
 
@@ -227,4 +232,38 @@ header {
     background-color: #333;
 }
 
+.image-block{
+    max-width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.image-block img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* -------------------------------download------------------- */
+
+
+
+.download-section{
+    background: white;
+}
+
+.download-section h4{
+    font-family: 'Bungee', sans-serif;
+    font-size: 64px;
+    padding: 100px 0 0 0;
+    margin: 0;
+}
+
+.download-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
