@@ -98,3 +98,60 @@ header {
   height: auto;
   border-radius: 10px;
 }
+
+/* ----------------------information------------------ */
+
+.scattered-icons-section {
+  background: white;
+  padding: 150px 40px;
+  position: relative;  /* Important: icons use this as anchor */
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.center-text {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.center-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.center-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ICON STYLES */
+.icon {
+  position: absolute;
+  width: 58px;
+  height: auto;
+  opacity: 0.8;
+  z-index: 0;  /* Behind text */
+}
+
+/* Example positions - customize as needed */
+.icon1 { top: 20px; left: 30px; transform: rotate(0); }
+.icon2 { bottom: 50px; left: 600px; transform: rotate(15deg); }
+.icon3 { bottom: 70px; left: -10px; transform: rotate(-35deg); }
+.icon4 { bottom: -20px; left: 870px; transform: rotate(77deg); }
+.icon5 { top: 260px; left: 150px; transform: rotate(30deg); }
+.icon6 { top: -15px; right: 445px; transform: rotate(15deg); }
+.icon7 { bottom: 20px; left: 250px; transform: rotate(30deg); }
+.icon8 { top: 0; left: 430px; transform: rotate(0); }
+.icon9 { top: 35px; right: 65px; transform: scaleX(-1);}
+.icon10 { top: 240px; right: 165px; transform: rotate(-10deg);}
+.icon11 { bottom: 140px; right: -20px; transform: rotate(-20deg);}
+.icon12 { bottom: -10px; right: 240px; transform: rotate(-20deg);}
+
+
+
