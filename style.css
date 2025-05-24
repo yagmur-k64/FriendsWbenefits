@@ -57,3 +57,44 @@ header {
   width: 50px;
   height: auto;
 }
+
+
+
+
+/* ----------------hero------------ */
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 115px;
+}
+
+.big-image img {
+  width: 430px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-text {
+  color: white;
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-family: 'Bungee', sans-serif;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.small-image {
+  width: 380px;
+  height: auto;
+  border-radius: 10px;
+}
