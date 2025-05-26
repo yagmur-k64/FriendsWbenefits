@@ -452,6 +452,8 @@ header {
 /* ------------------footer---------------- */
 
 .site-footer {
+  position: relative;
+  overflow: hidden;
   background-color: #000;
   color: white;
   padding: 60px 40px 30px;
@@ -561,3 +563,15 @@ header {
   text-decoration: underline;
   font-size: 13px;
 }
+
+.footer-mascot {
+  position: absolute;
+  bottom: -50px; 
+  left: -80px; 
+  transform: rotate(30deg);
+  max-height: 250px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
