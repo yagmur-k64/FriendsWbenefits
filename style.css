@@ -267,3 +267,78 @@ header {
     font-size: 24px;
     font-weight: 400;
 }
+
+/* -------------------------------email------------------- */
+
+
+.mail-section {
+  color: white;
+  padding: 100px 20px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.email-content h2 {
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 860px;
+  max-height: 135px;
+  margin: 0  20px;
+}
+
+.email-form input {
+  margin-left: 50px;
+  border: none;
+  outline: none;
+  font-size: 64px;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+
+.email-form input::placeholder {
+  color: black;
+  opacity: 1;
+}
+.email-form button {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 2rem;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.email-form button:hover {
+  background: black;
+  color: white;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+}
