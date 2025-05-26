@@ -278,6 +278,7 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: col;
 }
 
 .email-content h2 {
@@ -296,15 +297,14 @@ header {
   border-radius: 20px;
   overflow: hidden;
   max-width: 860px;
-  max-height: 135px;
   margin: 0  20px;
+  padding: 20px 50px;
 }
 
 .email-form input {
-  margin-left: 50px;
   border: none;
   outline: none;
-  font-size: 64px;
+  font-size: 48px;
   flex: 1;
   font-family: 'Poppins', sans-serif;
   color: black;
@@ -319,10 +319,10 @@ header {
   background: white;
   border: 2px solid black;
   color: black;
-  font-size: 2rem;
-  padding: 10px;
-  width: 45px;
-  height: 45px;
+  font-size: 3rem;
+  padding: 10px 10px 20px 10px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   display: flex;
   align-items: center;
