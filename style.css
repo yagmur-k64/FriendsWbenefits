@@ -278,15 +278,25 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: col;
+  flex-direction: column;
+  text-align: left;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  width: 100%;
+  max-width:1050px;
 }
 
 .email-content h2 {
   font-size: 90px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-bottom: 40px;
   text-align: left;
+  margin-left: 50px;
 }
 
 .email-form {
@@ -296,8 +306,8 @@ header {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  max-width: 860px;
-  margin: 0  20px;
+  width: 850px;
+  margin: 0  auto;
   padding: 20px 50px;
 }
 
@@ -337,8 +347,31 @@ header {
 }
 
 .disclaimer {
-  font-size: 0.75rem;
+  font-size: 20px;
   color: #ffffff;
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 25px;
 }
+
+.slot-wrapper {
+  display: inline-block;
+  height: 108px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slot-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slot-track span {
+  line-height: 1.2em;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
