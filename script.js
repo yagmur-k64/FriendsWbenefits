@@ -12,6 +12,14 @@ setInterval(() => {
 
 
 
+
+
+
+
+// -------------------------email----------------------
+
+
+
 const slotTrack = document.querySelector('.slot-track');
 const items = slotTrack.children;
 const slotWrapper = document.querySelector('.slot-wrapper');
@@ -37,3 +45,32 @@ const scroll = () => {
 };
 
 setInterval(scroll, 2000);
+
+
+
+
+
+// ------------------------- questions ------------------------
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+
+  question.addEventListener('click', () => {
+    const isOpen = answer.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-answer').forEach(a => {
+      a.classList.remove('open');
+      a.style.maxHeight = null;
+    });
+
+    // Open clicked one
+    if (!isOpen) {
+      answer.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
