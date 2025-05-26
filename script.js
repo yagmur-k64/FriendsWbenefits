@@ -17,9 +17,6 @@ setInterval(() => {
 
 
 // -------------------------email----------------------
-
-
-
 const slotTrack = document.querySelector('.slot-track');
 const items = slotTrack.children;
 const slotWrapper = document.querySelector('.slot-wrapper');
@@ -67,10 +64,15 @@ faqItems.forEach(item => {
       a.style.maxHeight = null;
     });
 
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.classList.remove('active');
+    });
+
     // Open clicked one
     if (!isOpen) {
       answer.classList.add('open');
       answer.style.maxHeight = answer.scrollHeight + 'px';
+      question.classList.add('active');
     }
   });
 });
